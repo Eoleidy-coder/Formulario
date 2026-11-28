@@ -1,0 +1,61 @@
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción a Cursos</title>
+  </head>
+
+  <body>
+    <main class="contenedor">
+      <form id="formulario">
+        <h1>Inscripción a Cursos</h1>
+        <p class="descripcion">Completa tus datos para registrarte.</p>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"
+          placeholder="Ingresa tu nombre" required>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido"
+          placeholder="Ingresa tu apellido" required>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="text" id="correo" name="correo"
+          placeholder="ejemplo@gmail.com" required>
+
+        <p class="subtitulo">Género:</p>
+        <div class="opciones">
+          <label><input type="radio" name="genero" value="Femenino"> Femenino</label>
+          <label><input type="radio" name="genero" value="Masculino"> Masculino</label>
+          <label><input type="radio" name="genero" value="Otro"> Otro</label>
+        </div>
+
+        <label for="curso">Curso que desea realizar:</label>
+        <select id="curso" name="curso">
+          <option value="">Seleccione un curso</option>
+          <option value="Programación Web">Programación Web</option>
+          <option value="Diseño Gráfico">Diseño Gráfico</option>
+          <option value="Informática Básica">Informática Básica</option>
+          <option value="Base de Datos">Base de Datos</option>
+        </select>
+
+        <p class="subtitulo">Conocimientos previos:</p>
+        <div class="opciones">
+          <label><input type="checkbox" name="conocimientos" value="Word"> Word</label>
+          <label><input type="checkbox" name="conocimientos" value="Excel"> Excel</label>
+          <label><input type="checkbox" name="conocimientos" value="Programación"> Programación</label>
+        </div>
+
+        <label for="comentario">¿Por qué desea realizar este curso?</label>
+        <textarea id="comentario" name="comentario"
+          placeholder="Escribe tu respuesta aquí..."></textarea>
+
+        <button type="submit">Enviar inscripción</button>
+      </form>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
